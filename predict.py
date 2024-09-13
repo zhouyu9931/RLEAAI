@@ -1,14 +1,8 @@
 import torch
 import os
-import torch.nn as nn
 import torch.nn.functional as F
 from Bio import SeqIO
-from torch.utils.data import Dataset, DataLoader
-import numpy as np
 import argparse
-import random
-from sklearn.metrics import roc_curve, auc, precision_recall_curve
-from tqdm import tqdm
 
 from utils.embedding import esm_embedding
 from utils.cksaap import CKSAAP
@@ -19,9 +13,9 @@ def _get_args():
     """Gets command line arguments"""
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--ab_fa', type=str, default='./data/ab.fasta')
-    parser.add_argument('--ag_fa', type=str, default='./data/ag.fasta')
-    parser.add_argument('--virus', type=str, default='HIV')
+    parser.add_argument('--ab_fa', type=str, default='./data/ab.fasta', help='path to antibody fasta file')
+    parser.add_argument('--ag_fa', type=str, default='./data/ag.fasta', help='path to antigen fasta file')
+    parser.add_argument('--virus', type=str, default='HIV', help='HIV or SARS-CoV-2')
     parser.add_argument('--ckp_dir', type=str, default='./ckp')
 
     return parser.parse_args()
@@ -67,7 +61,7 @@ def main():
         # print(prob)
 
         print(f"Predicted probability of neutralization: {prob.item():.4f}")
-        
+
 
 
 if __name__ == '__main__':
