@@ -14,5 +14,6 @@ Improving Antibody-Antigen Neutralization Prediction Based on Sequence and Prote
 -fair-esm 2.0.0
 # Usage
 The script predict.py is used to predict probability of neutralization.
-
+```
 python predict.py --ab_fa data/ab.fasta --ag_fa data/ag.fasta
+```
