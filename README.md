@@ -17,3 +17,5 @@ The script predict.py is used to predict probability of neutralization.
 ```
 python predict.py --ab_fa data/ab.fasta --ag_fa data/ag.fasta
 ```
+# Contact
+If you have any questions, comments, or would like to report a bug, please file a Github issue.
