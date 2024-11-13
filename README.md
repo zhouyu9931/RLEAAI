@@ -1,5 +1,5 @@
 # RLEAAI
-Improving Antibody-Antigen Neutralization Prediction Based on Sequence and Protein Language Model
+Improving Antibody-Antigen Interaction Prediction Using Protein Language Model and Sequence Order Information
 # Dependency
 -python 3.8
 
