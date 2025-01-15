@@ -44,7 +44,7 @@ python predict.py --ab_fa data/example/ab.fasta --ag_fa data/example/ag.fasta --
 ## Result
 
 * The prediction result are provided in the  `results` folder.
-* Each predicted results file contains two columns, with each row representing a pair of antibody and antigen samples. The first column provides the predicted probability of interaction, where a probability exceeding 0.5 indicates the presence of an interaction. The second column contains the true label. For example:
+* Each predicted results file contains two columns, with each row representing a pair of antibody and antigen samples. The first column provides the predicted probability of interaction, where a probability exceeding 0.5 indicates the presence of an interaction. The second column contains the true label, where 1.0 indicates the presence of an interaction and 0.0 indicates the absence of an interaction. For example:
 
 ~~~
 Prob	    Label
