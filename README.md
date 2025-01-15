@@ -47,7 +47,7 @@ python predict.py --ab_fa data/example/ab.fasta --ag_fa data/example/ag.fasta --
 * Each predicted results file contains two columns, with each row representing a pair of antibody and antigen samples. The first column provides the predicted probability of interaction, where a probability exceeding 0.5 indicates the presence of an interaction. The second column contains the true label. For example:
 
 ~~~
-Prob	Label
+Prob	    Label
 0.781890	1.0
 0.000014	0.0
 0.492546	1.0
