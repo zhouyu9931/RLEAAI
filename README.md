@@ -43,31 +43,21 @@ python predict.py --ab_fa data/example/ab.fasta --ag_fa data/example/ag.fasta --
 
 ## Result
 
-* The prediction result file (e.g., "3J8YK.pred") of each protein (e.g., 3J8YK) in your input fasta file (-seq_fa) could be found in the folder which you input as "-sf".
-* There are four columns in each prediction result file. The 1st column is the residue index. The 2nd column is the residue type. The 3rd column is the predicted probablity of the corresponding residue belonging to the class of ATP-binding residues. The 4th column is the prediction result ('B' and 'N' mean the predicted ATP-binding and non-ATP-binding residue, respectively). For example:
+* The prediction result are provided in the  `results` folder.
+* Each predicted results file contains two columns, with each row representing a pair of antibody and antigen samples. The first column provides the predicted probability of interaction, where a probability exceeding 0.5 indicates the presence of an interaction. The second column contains the true label. For example:
 
 ~~~
-Index    AA    Prob.    State
-    0     A    0.001    N
-    1     E    0.000    N
-    2     S    0.007    N
-    3     N    0.001    N
-    4     I    0.000    N
-    5     K    0.000    N
-    6     V    0.000    N
-    7     M    0.003    N
-    8     C    0.000    N
-    9     R    0.984    B
-   10     F    0.000    N
-   11     R    0.993    B
-   12     P    0.990    B
-   13     L    0.001    N
-   14     N    0.001    N
-   15     E    0.000    N
-   16     S    0.005    N
-   17     E    0.000    N
-   18     V    0.000    N
-   19     N    0.001    N
+Prob	Label
+0.781890	1.0
+0.000014	0.0
+0.492546	1.0
+0.549302	0.0
+0.000011	0.0
+0.961460	1.0
+0.364680	1.0
+0.994271	1.0
+0.966377	1.0
+0.000141	0.0
 ~~~
 
 
