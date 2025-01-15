@@ -33,12 +33,12 @@ The HIV data and SARS-CoV-2 data is in the `data` folder.
 
 Run an example on HIV data, please run
 ```
-python main.py --config=configs/test_on_HIV_cls.yml
+python predict.py --ab_fa data/example/ab.fasta --ag_fa data/example/ag.fasta --virus HIV
 ```
 
 Run an example on SARS-CoV-2 data data, please run, please run
 ```
-python main.py --config=configs/test_on_HIV_reg.yml
+python predict.py --ab_fa data/example/ab.fasta --ag_fa data/example/ag.fasta --virus SARS-CoV-2
 ```
 
 ## Result
