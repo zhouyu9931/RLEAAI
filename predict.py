@@ -60,7 +60,7 @@ def main():
         prob = F.sigmoid(output)
         # print(prob)
 
-        print(f"Predicted probability of neutralization: {prob.item():.4f}")
+        print(f"Predicted probability of interaction: {prob.item():.4f}")
 
 
 
